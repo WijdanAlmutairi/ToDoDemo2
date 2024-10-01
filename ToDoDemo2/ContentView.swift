@@ -9,13 +9,23 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List {
+                TaskRowView(completed: false)
+            }
+            .padding()
+            
+            .navigationTitle("Tasks")
+            .navigationBarTitleDisplayMode(.large)
+            .toolbar {
+                ToolbarItemGroup(placement: .topBarTrailing) {
+                    Button("", systemImage: "plus") {
+                        //  show Add View
+                    }
+                }
+            }
         }
-        .padding()
+        
     }
 }
 
