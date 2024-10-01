@@ -8,19 +8,18 @@
 import SwiftUI
 
 struct TaskRowView: View {
-    
-    var completed: Bool = false
+    var task: Task
     
     var body: some View {
         HStack {
-            Image(systemName: completed ? "checkmark.circle" : "circle" )
+            Image(systemName: task.completed ? "checkmark.circle" : "circle" )
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("Do homework")
+            Text(task.title)
         }
     }
 }
 
 #Preview {
-    TaskRowView()
+    TaskRowView(task: Task(title: "Do homework", completed: false))
 }

@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import SwiftData
 
 struct AddTaskView: View {
+    @Environment (\.modelContext) var context
+    @Environment (\.dismiss) private var dismiss
+    
+    
     @State var title: String = ""
+    @State var completed: Bool = false
     
     var body: some View {
         NavigationStack {
@@ -18,10 +24,14 @@ struct AddTaskView: View {
                 HStack {
                     Button("Add") {
                         // save data
+                        let task = Task(title: title, completed: completed)
+                        context.insert(task)
+                        dismiss()
                     }.padding()
                     
                     Button("Cancel") {
-                        // save data
+                        // dismiss sheet
+                        dismiss()
                     }.padding()
                 }
                 Spacer()

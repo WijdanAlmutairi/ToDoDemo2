@@ -14,6 +14,7 @@
 		A8FF94A22CAC3E6C00E7E344 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FF94A12CAC3E6C00E7E344 /* Launch Screen.storyboard */; };
 		A8FF94A42CAC42B600E7E344 /* TaskRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FF94A32CAC42B600E7E344 /* TaskRowView.swift */; };
 		A8FF94A62CAC441000E7E344 /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FF94A52CAC441000E7E344 /* AddTaskView.swift */; };
+		A8FF94AA2CAC46E500E7E344 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FF94A92CAC46E500E7E344 /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		A8FF94A12CAC3E6C00E7E344 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		A8FF94A32CAC42B600E7E344 /* TaskRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskRowView.swift; sourceTree = "<group>"; };
 		A8FF94A52CAC441000E7E344 /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
+		A8FF94A92CAC46E500E7E344 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				A8FF94932CAC39D400E7E344 /* ToDoDemo2App.swift */,
 				A8FF94952CAC39D400E7E344 /* ContentView.swift */,
 				A8FF94A52CAC441000E7E344 /* AddTaskView.swift */,
+				A8FF94A92CAC46E500E7E344 /* Task.swift */,
 				A8FF94A32CAC42B600E7E344 /* TaskRowView.swift */,
 				A8FF94A12CAC3E6C00E7E344 /* Launch Screen.storyboard */,
 				A8FF94972CAC39D500E7E344 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 			files = (
 				A8FF94962CAC39D400E7E344 /* ContentView.swift in Sources */,
 				A8FF94A42CAC42B600E7E344 /* TaskRowView.swift in Sources */,
+				A8FF94AA2CAC46E500E7E344 /* Task.swift in Sources */,
 				A8FF94942CAC39D400E7E344 /* ToDoDemo2App.swift in Sources */,
 				A8FF94A62CAC441000E7E344 /* AddTaskView.swift in Sources */,
 			);
