@@ -21,19 +21,27 @@ struct AddTaskView: View {
             VStack {
                 TextField("Add Task", text: $title)
                     .textFieldStyle(.roundedBorder)
-                HStack {
+                HStack (spacing: 10) {
                     Button("Add") {
                         // save data
                         let task = Task(title: title, completed: completed)
                         context.insert(task)
                         dismiss()
-                    }.padding()
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .buttonStyle(.borderedProminent)
                     
                     Button("Cancel") {
                         // dismiss sheet
                         dismiss()
-                    }.padding()
+                    }
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .buttonStyle(.borderedProminent)
                 }
+                .fixedSize(horizontal: false, vertical: true)
+                .padding()
                 Spacer()
             }
             .padding()
