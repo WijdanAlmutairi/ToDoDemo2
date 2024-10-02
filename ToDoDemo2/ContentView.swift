@@ -35,6 +35,7 @@ struct ContentView: View {
                 }
                 
             }
+            .listStyle(.plain)
             .padding()
             
             .navigationTitle("Tasks")
