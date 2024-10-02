@@ -19,6 +19,14 @@ struct ContentView: View {
             List {
                 ForEach(tasks) { task in
                     TaskRowView(task: task)
+                        .gesture(
+                            TapGesture(count: 2).onEnded {
+                                // Edit data
+                            }.exclusively(before: TapGesture(count: 1).onEnded {
+                                // change complete value
+                                task.completed.toggle()
+                            })
+                        )
                 }
                 
             }
