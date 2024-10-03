@@ -5,7 +5,7 @@ This To-Do app allows users to perform multiple features such as add, view, edit
 Finally, the user can delete tasks.
 
 ## Figma File
-The Figma file for this project [Figma File] (https://www.figma.com/design/yi90CrXVnSlfUhCjhooAws/To-Do-Demo?node-id=10-3&t=Ga8ZDQTLsJKcJGFI-1).
+The Figma file for this project [Figma File](https://www.figma.com/design/yi90CrXVnSlfUhCjhooAws/To-Do-Demo?node-id=10-3&t=Ga8ZDQTLsJKcJGFI-1).
 
 ## Build Requirments
 - iOS Version: 17.5
